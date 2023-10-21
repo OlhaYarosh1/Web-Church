@@ -1,0 +1,14 @@
+.header {
+    position: sticky;
+    z-index: 4;
+    top: 0px;
+    height: 7vw;
+    background-color: #d9e1e4;
+}
+
+.imgLogo {
+    height: 95%;
+    padding: 0.25%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,69 @@
+.mainScreen {
+    width: 100%;
+    height: 1000px;
+    z-index: 0;
+}
+
+/* colors 
+#2b5263 синій
+#8babb6 блакитний
+#d9e1e4 білий
+#fbaf61 жовтий
+#9a584c коричневий
+#ece0e0 беж
+#474f52 сірий
+*/
+
+
+.headerScreen {
+    position: static;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.church, .eparchy, .ugcc {
+    color: wheat;
+    text-shadow: 3px 3px 4px #775413;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    text-transform: uppercase;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.middleText {
+    width: 40%;
+    left: 25%;
+    position: relative;
+    top: 15%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5%;
+    height: 10.5vw;
+}
+
+.church {
+    top: -20%;
+    font-size: 3.1vw;
+}
+
+.eparchy {
+    top: 0.8vw;
+    font-size: 1.5vw;
+}
+
+.ugcc {
+    top: 1.8vw;
+    font-size: 1.5vw;
+}
