@@ -1,5 +1,6 @@
-import Header from "./ChurchPage/MainScreen/Header/Header";
-import MainScreen from "./ChurchPage/MainScreen/MainScreen/MainScreen";
+import GalleryScreen from "./ChurchPage/GalleryScreen/GalleryScreen";
+import Header from "./ChurchPage/Header/Header";
+import MainScreen from "./ChurchPage/MainScreen/MainScreen";
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Header/>
       <MainScreen/>
+      <GalleryScreen/>
     </div>
   );
 }

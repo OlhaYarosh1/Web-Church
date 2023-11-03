@@ -8,7 +8,7 @@ const Menu = () => {
     return (
         <div className={classes.menuBox}>
             <div className={classes.menuGrid}>
-                <a href='/'><div>Галерея</div></a>
+                <a href='#gallery'><div>Галерея</div></a>
                 <a href='/'><div>Історія</div></a>
                 <a href='/'><div>Хор</div></a>
                 <a href='/'><div>Спільноти</div></a>
