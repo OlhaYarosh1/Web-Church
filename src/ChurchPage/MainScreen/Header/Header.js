@@ -1,6 +1,6 @@
 import React from 'react';
-import Menu from './Menu/Menu'
 import classes from './Header.module.css';
+import Menu from './Menu/Menu';
 
 const Header = () => {
   return (

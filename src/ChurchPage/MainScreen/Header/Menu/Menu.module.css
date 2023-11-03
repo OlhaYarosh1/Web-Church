@@ -1,0 +1,89 @@
+.menuBox {
+    position: relative;
+    z-index: 4;
+    height: 3vw;
+    background-color: #2b5263;
+}
+
+.menuGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 16%) 4%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.iconShare:hover {
+    color: #8babb6;
+}
+
+.iconShare:hover .socialIcons {
+    visibility: visible;
+    width: 4%;
+    height: 260%;
+    z-index: 4;
+    transform: translateY(25%);
+    border-radius: 0 0 0 30vh;
+    padding-bottom: 1%;
+    padding-top: 0.35%;
+}
+
+.socialIcons {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    background-color: rgba(43, 82, 99, .5);
+    z-index: -1;
+    transition: transform .5s, height .3s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* .iconShare:hover .socialIcons {
+    position: absolute;
+    width: 4%;
+    height: 250%;
+    background-color: #2b5263;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-10%);
+    z-index: 5;
+    padding-bottom: 1%;
+    padding-top: 5px;
+    transition-delay: 0.2s, 0.5s, 0.5s;
+}
+
+.socialIcons {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    width: 0;
+    height: 0;
+    top: 90%;
+    border-radius: 0 0 0 30vh;
+    transition: transform 0.4s;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+} */
+
+.iconShare:hover .iconItem {
+    transition-delay: 0.5s;
+}
+
+a {
+    color: aliceblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8babb6;
+}
+
+p {
+    margin: 15%;
+}

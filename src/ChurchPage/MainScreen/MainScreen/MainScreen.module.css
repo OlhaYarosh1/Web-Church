@@ -1,7 +1,8 @@
 .mainScreen {
     width: 100%;
-    height: 1000px;
+    height: 130vh;
     z-index: 0;
+    padding-top: 10%;
 }
 
 /* colors 
@@ -13,11 +14,6 @@
 #ece0e0 беж
 #474f52 сірий
 */
-
-
-.headerScreen {
-    position: static;
-}
 
 .background {
     width: 100vw;
