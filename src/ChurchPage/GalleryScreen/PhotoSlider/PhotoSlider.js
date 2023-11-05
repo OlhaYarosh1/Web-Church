@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../PhotoSlider/PhotoSlider.module.css';
+import classes from './PhotoSlider.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,10 +14,10 @@ const PhotoSlider = ({id}) => {
   <s id='s4' className={classes.s4}></s>
 
   <div className={classes.slider}>
-	<img src='church1.jpg' className={classes.slide1}></img>
-    <img src='church2.jpg' className={classes.slide2}/>
-    <img src='church3.jpg' className={classes.slide3}/>
-    <img src='church4.jpg' className={classes.slide4}/>
+	<div className={classes.slideBackground}><img src='church1.jpg' className={classes.slide1}/></div>
+    <div className={classes.slideBackground}><img src='church2.jpg' className={classes.slide2}/></div>
+    <div className={classes.slideBackground}><img src='church3.jpg' className={classes.slide3}/></div>
+    <div className={classes.slideBackground}><img src='church4.jpg' className={classes.slide4}/></div>
   </div>
 
   <div className={classes.prevNext}>

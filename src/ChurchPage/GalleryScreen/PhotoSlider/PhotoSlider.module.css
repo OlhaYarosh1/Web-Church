@@ -21,25 +21,30 @@ a {
 	line-height: 30px;
 	text-decoration: none;
 	text-align: center;
-	background: rgba(255, 255, 255, 1);
+	background: red;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 
-.bullets > a+a {
-	background: rgba(255, 255, 255, 0.5);
+.bullets > a:hover {
+	background: rgba(43, 82, 99, 1) !important;
 }
 
-.bullets > a:hover {
-	background: rgba(255, 255, 255, 0.7) !important;
+.slideBackground {
+    width: 100%;
+    height: 100%;
 }
 
 .slide1, .slide2, .slide3, .slide4 {
-    min-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
     position: relative;
     object-fit: cover;
     z-index: -1;
-    max-height: 700px;
+    min-width: 75%;
+    max-height: 600px;
 }
 
 .slider {
@@ -66,10 +71,10 @@ a {
 
 .gallery >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
 /* ACTIVE */
-.s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
-.s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
-.s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
-.s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+.s1:target ~ .bullets >*:nth-child(1) {background: rgba(43, 82, 99, .6);}
+.s2:target ~ .bullets >*:nth-child(2) {background: rgba(43, 82, 99, .6);}
+.s3:target ~ .bullets >*:nth-child(3) {background: rgba(43, 82, 99, .6);}
+.s4:target ~ .bullets >*:nth-child(4) {background: rgba(43, 82, 99, .6);}
 
 .s1:target ~ .slider {transform: translateX(0%);}
 .s2:target ~ .slider {transform: translateX(-100%);}
@@ -81,7 +86,8 @@ a {
 	position: absolute;
 	z-index: 1;
 	top: 50%;
-	width: 100%;
+    left: 7%;
+	width: 86%;
 	height: 0;
 }
 
@@ -94,7 +100,7 @@ a {
 }
 
 .prevNext a {
-	background: aliceblue;
+	background: #2b5263;
 	position: absolute;
     cursor: pointer;
 	width: 60px;
