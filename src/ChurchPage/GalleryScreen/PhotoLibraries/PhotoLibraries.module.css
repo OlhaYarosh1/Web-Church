@@ -1,0 +1,81 @@
+.libraries {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: 80vh;
+    background-color: #ece0e0;
+}
+
+.slide1 {
+    margin-left: 0.5%;
+    position: absolute;
+    border-radius: 15px;
+    height: 29%;
+    width: 29%;
+    z-index: 5;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.slide2, .slide3, .slide4 {
+    margin-left: 0.5%;
+    border-radius: 15%;
+    position: absolute;
+    height: 29%;
+    width: 29%;
+    transition: 1s;
+}
+
+.slide1:hover  {
+    transition: .5s ease-in-out;
+    transition-delay: 0.1s;
+    transform: rotate(1deg);    
+}
+
+.slide1:hover ~ .slide2  {
+    transition: .5s ease-in-out;
+    transition-delay: 0.1s;
+    transform: rotate(7deg) translate(30px, -30px);    
+}
+
+.slide1:hover ~ .slide3  {
+    transition: .5s ease-in-out;
+    transition-delay: 0.1s;
+    transform: rotate(5deg) translate(20px, -20px);    
+}
+
+.slide1:hover ~ .slide4  {
+    transition: .5s ease-in-out;
+    transition-delay: 0.1s;
+    transform: rotate(3deg) translate(10px, -10px);    
+}
+
+.href {
+    color: black;
+    cursor: pointer;
+}
+
+.labelPokrova:hover, .labelRizdvo:hover, .labelVelykden:hover, .labelVolontery:hover, .labelVertep:hover, .labelHaivky:hover {
+    transition: .5s;
+    transform: scale(1.5);
+}
+
+.labelPokrova, .labelRizdvo, .labelVelykden, .labelVolontery, .labelVertep, .labelHaivky {
+    display: flex;
+    font-size: 3vh;
+    justify-content: center;
+    position: relative;
+    vertical-align: bottom;
+    z-index: 3;
+    top: 110%;
+    width: 15%;
+    margin-left: 42.5%;
+    transition: .5s;
+}
+
+.folderPokrova, .folderRizdvo, .folderVelykden, .folderVolontery, .folderVertep, .folderHaivky {
+    margin-top: 1.5%;
+    height: 30%;
+    width: 30%;
+}

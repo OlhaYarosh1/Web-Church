@@ -13,15 +13,16 @@ const Menu = () => {
                 <a href='/'><div>Хор</div></a>
                 <a href='/'><div>Спільноти</div></a>
                 <a href='/'><div>Контакти</div></a>
-                <a href='/'><div>Мапа</div></a>
-                <a href=''><div className={classes.iconShare}>
-                  <FontAwesomeIcon icon={faShareNodes}/>
-                  <div className={classes.socialIcons}>
-                      <a href='/' className={classes.iconItem}><p><FontAwesomeIcon icon={faFacebook}/></p></a>
-                      <a href='/' className={classes.iconItem}><p><FontAwesomeIcon icon={faYoutube}/></p></a>
-                      <a href='/' className={classes.iconItem}><p><FontAwesomeIcon icon={faInstagram}/></p></a>
-                  </div>
-                </div></a>
+                <a href='/'>
+                    <div className={classes.iconShare}>
+                        <FontAwesomeIcon icon={faShareNodes}/>
+                        <div className={classes.socialIcons}>
+                            <a href='/' className={classes.iconItem}><p><FontAwesomeIcon icon={faFacebook}/></p></a>
+                            <a href='/' className={classes.iconItem}><p><FontAwesomeIcon icon={faYoutube}/></p></a>
+                            <a href='/' className={classes.iconItem}><p><FontAwesomeIcon icon={faInstagram}/></p></a>
+                    </div>
+                    </div>
+                </a>
             </div>
         </div>
     )

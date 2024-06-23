@@ -1,15 +1,17 @@
 import React from 'react';
 import classes from '../GalleryScreen/GalleryScreen.module.css';
 import PhotoSlider from './PhotoSlider/PhotoSlider';
-import AdditionalGallery from './AdditionalGallery/AdditionalGallery';
+import AdditionalGallery from './Additional/AdditionalGallery';
+import PhotoLibraries from './PhotoLibraries/PhotoLibraries';
 
 const GalleryScreen = () => {
   return (
-    <div>
+    <div className={classes.galleryScreen}>
       <AdditionalGallery/>
       <div id='gallery'>
-      <PhotoSlider/>
+        <PhotoLibraries/>
       </div>
+      {/* <PhotoSlider/> */}
     </div>
   )
 }
